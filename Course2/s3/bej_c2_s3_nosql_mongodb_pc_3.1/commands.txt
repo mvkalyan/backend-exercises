@@ -1,0 +1,571 @@
+db.RestaurantDetails.insertOne({
+	"address":{
+		"building":"23,Archer Main",
+		"street":"marble drive",
+		"zipcode":403204
+	},
+	"type_of_restaurant":"Bakery",
+	"cuisine":["pastry","dessert"],
+	"state":"Oklahoma",
+	"grades":[
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2}
+],
+	"name":"Park Bake Shop",
+	"restaurant_id":"30075445"
+});
+
+
+
+
+db.RestaurantDetails.insertMany([{
+	"address":{
+		"building":"24,Tailor Main",
+		"street":"marble Mani",
+		"zipcode":403205
+	},
+	"type_of_restaurant":"Multi_Cuisine",
+	"cuisine":["Japanese","Chinese"],
+	"state":"Manogod",
+	"grades":[
+		{"date":{$date:1237787981235},"grade":"B","score":4},
+		{"date":{$date:1237787981235},"grade":"B","score":4},
+		{"date":{$date:1237787981235},"grade":"B","score":5},
+		{"date":{$date:1237787981235},"grade":"A","score":5},
+		{"date":{$date:1237787981235},"grade":"A","score":5}
+],
+	"name":"Space Mike Shop",
+	"restaurant_id":"34565445"
+},{
+	"address":{
+		"building":"78,Tourist",
+		"street":"drivein",
+		"zipcode":403964
+	},
+	"type_of_restaurant":"Bakery",
+	"cuisine":["pastry","dessert"],
+	"state":"Andhta",
+	"grades":[
+		{"date":{$date:1212567981235},"grade":"A+","score":2},
+		{"date":{$date:1212567981235},"grade":"A+","score":7},
+		{"date":{$date:1212567981235},"grade":"A+","score":6},
+		{"date":{$date:1212567981235},"grade":"B","score":2},
+		{"date":{$date:1212567981235},"grade":"A","score":9}
+],
+	"name":"Gowthaas",
+	"restaurant_id":"56875445"
+},{
+	"address":{
+		"building":"23,Archer Main",
+		"street":"marble drive",
+		"zipcode":403204
+	},
+	"type_of_restaurant":"Bakery",
+	"cuisine":["pastry","dessert"],
+	"state":"Oklahoma",
+	"grades":[
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2}
+],
+	"name":"Bike Cake Shop",
+	"restaurant_id":"31175445"
+},{
+	"address":{
+		"building":"364,Javaline Throw",
+		"street":"Tiles Star",
+		"zipcode":403777
+	},
+	"type_of_restaurant":"FastFood",
+	"cuisine":["Andhra","chinese"],
+	"state":"Telangana",
+	"grades":[
+		{"date":{$date:9684567981235},"grade":"C","score":10},
+		{"date":{$date:9684567981235},"grade":"C","score":10},
+		{"date":{$date:9684567981235},"grade":"C","score":10},
+		{"date":{$date:9684567981235},"grade":"A","score":10},
+		{"date":{$date:9684567981235},"grade":"A","score":2}
+],
+	"name":"Kalyan Khazana",
+	"restaurant_id":"98445"
+},{
+	"address":{
+		"building":"203,Archer dfgdfg",
+		"street":"Kalyane",
+		"zipcode":9879875
+	},
+	"type_of_restaurant":"Mine",
+	"cuisine":["asdasda","adsasasd"],
+	"state":"MP",
+	"grades":[
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2}
+],
+	"name":"Memories",
+	"restaurant_id":"30077987"
+}])
+
+
+Restaurant.drop()
+ReferenceError: Restaurant is not defined
+RestaurantDetails.drop()
+ReferenceError: RestaurantDetails is not defined
+db.RestaurantDetails.drop();
+true
+show dbs
+Restaurant    8.00 KiB
+admin        40.00 KiB
+config      108.00 KiB
+local        72.00 KiB
+show collections
+restaurant
+db.restaurant.drop();
+true
+db.createCollection("RestaurantDetails")
+{ ok: 1 }
+db.RestaurantDetails.insertOne({
+	"address":{
+		"building":"23,Archer Main",
+		"street":"marble drive",
+		"zipcode":403204
+	},
+	"type_of_restaurant":"Bakery",
+	"cuisine":["pastry","dessert"],
+	"state":"Oklahoma",
+	"grades":[
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2}
+],
+	"name":"Park Bake Shop",
+	"restaurant_id":"30075445"
+});
+{ acknowledged: true,
+  insertedId: ObjectId("634d8233e3030c957d53aced") }
+db.RestaurantDetails.insertMany([{
+	"address":{
+		"building":"24,Tailor Main",
+		"street":"marble Mani",
+		"zipcode":403205
+	},
+	"type_of_restaurant":"Multi_Cuisine",
+	"cuisine":["Japanese","Chinese"],
+	"state":"Manogod",
+	"grades":[
+		{"date":{$date:1237787981235},"grade":"B","score":4},
+		{"date":{$date:1237787981235},"grade":"B","score":4},
+		{"date":{$date:1237787981235},"grade":"B","score":5},
+		{"date":{$date:1237787981235},"grade":"A","score":5},
+		{"date":{$date:1237787981235},"grade":"A","score":5}
+],
+	"name":"Space Mike Shop",
+	"restaurant_id":"34565445"
+},{
+	"address":{
+		"building":"78,Tourist",
+		"street":"drivein",
+		"zipcode":403964
+	},
+	"type_of_restaurant":"Bakery",
+	"cuisine":["pastry","dessert"],
+	"state":"Andhta",
+	"grades":[
+		{"date":{$date:1212567981235},"grade":"A+","score":2},
+		{"date":{$date:1212567981235},"grade":"A+","score":7},
+		{"date":{$date:1212567981235},"grade":"A+","score":6},
+		{"date":{$date:1212567981235},"grade":"B","score":2},
+		{"date":{$date:1212567981235},"grade":"A","score":9}
+],
+	"name":"Gowthaas",
+	"restaurant_id":"56875445"
+},{
+	"address":{
+		"building":"23,Archer Main",
+		"street":"marble drive",
+		"zipcode":403204
+	},
+	"type_of_restaurant":"Bakery",
+	"cuisine":["pastry","dessert"],
+	"state":"Oklahoma",
+	"grades":[
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2}
+],
+	"name":"Bike Cake Shop",
+	"restaurant_id":"31175445"
+},{
+	"address":{
+		"building":"364,Javaline Throw",
+		"street":"Tiles Star",
+		"zipcode":403777
+	},
+	"type_of_restaurant":"FastFood",
+	"cuisine":["Andhra","chinese"],
+	"state":"Telangana",
+	"grades":[
+		{"date":{$date:9684567981235},"grade":"C","score":10},
+		{"date":{$date:9684567981235},"grade":"C","score":10},
+		{"date":{$date:9684567981235},"grade":"C","score":10},
+		{"date":{$date:9684567981235},"grade":"A","score":10},
+		{"date":{$date:9684567981235},"grade":"A","score":2}
+],
+	"name":"Kalyan Khazana",
+	"restaurant_id":"98445"
+},{
+	"address":{
+		"building":"203,Archer dfgdfg",
+		"street":"Kalyane",
+		"zipcode":9879875
+	},
+	"type_of_restaurant":"Mine",
+	"cuisine":["asdasda","adsasasd"],
+	"state":"MP",
+	"grades":[
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2},
+		{"date":{$date:1234567981235},"grade":"A","score":2}
+],
+	"name":"Memories",
+	"restaurant_id":"30077987"
+}])
+{ acknowledged: true,
+  insertedIds: 
+   { '0': ObjectId("634d8449e3030c957d53acee"),
+     '1': ObjectId("634d8449e3030c957d53acef"),
+     '2': ObjectId("634d8449e3030c957d53acf0"),
+     '3': ObjectId("634d8449e3030c957d53acf1"),
+     '4': ObjectId("634d8449e3030c957d53acf2") } }
+
+use Restaurant
+'switched to db Restaurant'
+db.RestaurantDetails.find({},{"restaurant_id" : 1,"name":1,"cuisine" :1});
+{ _id: ObjectId("634d8233e3030c957d53aced"),
+  cuisine: [ 'pastry', 'dessert' ],
+  name: 'Park Bake Shop',
+  restaurant_id: '30075445' }
+{ _id: ObjectId("634d8449e3030c957d53acee"),
+  cuisine: [ 'Japanese', 'Chinese' ],
+  name: 'Space Mike Shop',
+  restaurant_id: '34565445' }
+{ _id: ObjectId("634d8449e3030c957d53acef"),
+  cuisine: [ 'pastry', 'dessert' ],
+  name: 'Gowthaas',
+  restaurant_id: '56875445' }
+{ _id: ObjectId("634d8449e3030c957d53acf0"),
+  cuisine: [ 'pastry', 'dessert' ],
+  name: 'Bike Cake Shop',
+  restaurant_id: '31175445' }
+{ _id: ObjectId("634d8449e3030c957d53acf1"),
+  cuisine: [ 'Andhra', 'chinese' ],
+  name: 'Kalyan Khazana',
+  restaurant_id: '98445' }
+{ _id: ObjectId("634d8449e3030c957d53acf2"),
+  cuisine: [ 'asdasda', 'adsasasd' ],
+  name: 'Memories',
+  restaurant_id: '30077987' }
+db.RestaurantDetails.find({},{"restaurant_id" : 0,"name":0,"cuisine" :0});
+{ _id: ObjectId("634d8233e3030c957d53aced"),
+  address: 
+   { building: '23,Archer Main',
+     street: 'marble drive',
+     zipcode: 403204 },
+  type_of_restaurant: 'Bakery',
+  state: 'Oklahoma',
+  grades: 
+   [ { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 } ] }
+{ _id: ObjectId("634d8449e3030c957d53acee"),
+  address: 
+   { building: '24,Tailor Main',
+     street: 'marble Mani',
+     zipcode: 403205 },
+  type_of_restaurant: 'Multi_Cuisine',
+  state: 'Manogod',
+  grades: 
+   [ { date: 2009-03-23T05:59:41.235Z, grade: 'B', score: 4 },
+     { date: 2009-03-23T05:59:41.235Z, grade: 'B', score: 4 },
+     { date: 2009-03-23T05:59:41.235Z, grade: 'B', score: 5 },
+     { date: 2009-03-23T05:59:41.235Z, grade: 'A', score: 5 },
+     { date: 2009-03-23T05:59:41.235Z, grade: 'A', score: 5 } ] }
+{ _id: ObjectId("634d8449e3030c957d53acef"),
+  address: { building: '78,Tourist', street: 'drivein', zipcode: 403964 },
+  type_of_restaurant: 'Bakery',
+  state: 'Andhta',
+  grades: 
+   [ { date: 2008-06-04T08:26:21.235Z, grade: 'A+', score: 2 },
+     { date: 2008-06-04T08:26:21.235Z, grade: 'A+', score: 7 },
+     { date: 2008-06-04T08:26:21.235Z, grade: 'A+', score: 6 },
+     { date: 2008-06-04T08:26:21.235Z, grade: 'B', score: 2 },
+     { date: 2008-06-04T08:26:21.235Z, grade: 'A', score: 9 } ] }
+{ _id: ObjectId("634d8449e3030c957d53acf0"),
+  address: 
+   { building: '23,Archer Main',
+     street: 'marble drive',
+     zipcode: 403204 },
+  type_of_restaurant: 'Bakery',
+  state: 'Oklahoma',
+  grades: 
+   [ { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 } ] }
+{ _id: ObjectId("634d8449e3030c957d53acf1"),
+  address: 
+   { building: '364,Javaline Throw',
+     street: 'Tiles Star',
+     zipcode: 403777 },
+  type_of_restaurant: 'FastFood',
+  state: 'Telangana',
+  grades: 
+   [ { date: 2276-11-21T21:46:21.235Z, grade: 'C', score: 10 },
+     { date: 2276-11-21T21:46:21.235Z, grade: 'C', score: 10 },
+     { date: 2276-11-21T21:46:21.235Z, grade: 'C', score: 10 },
+     { date: 2276-11-21T21:46:21.235Z, grade: 'A', score: 10 },
+     { date: 2276-11-21T21:46:21.235Z, grade: 'A', score: 2 } ] }
+{ _id: ObjectId("634d8449e3030c957d53acf2"),
+  address: 
+   { building: '203,Archer dfgdfg',
+     street: 'Kalyane',
+     zipcode: 9879875 },
+  type_of_restaurant: 'Mine',
+  state: 'MP',
+  grades: 
+   [ { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 } ] }
+db.RestaurantDetails.find({},{"restaurant_id" : 2,"name":2,"cuisine" :2});
+{ _id: ObjectId("634d8233e3030c957d53aced"),
+  cuisine: [ 'pastry', 'dessert' ],
+  name: 'Park Bake Shop',
+  restaurant_id: '30075445' }
+{ _id: ObjectId("634d8449e3030c957d53acee"),
+  cuisine: [ 'Japanese', 'Chinese' ],
+  name: 'Space Mike Shop',
+  restaurant_id: '34565445' }
+{ _id: ObjectId("634d8449e3030c957d53acef"),
+  cuisine: [ 'pastry', 'dessert' ],
+  name: 'Gowthaas',
+  restaurant_id: '56875445' }
+{ _id: ObjectId("634d8449e3030c957d53acf0"),
+  cuisine: [ 'pastry', 'dessert' ],
+  name: 'Bike Cake Shop',
+  restaurant_id: '31175445' }
+{ _id: ObjectId("634d8449e3030c957d53acf1"),
+  cuisine: [ 'Andhra', 'chinese' ],
+  name: 'Kalyan Khazana',
+  restaurant_id: '98445' }
+{ _id: ObjectId("634d8449e3030c957d53acf2"),
+  cuisine: [ 'asdasda', 'adsasasd' ],
+  name: 'Memories',
+  restaurant_id: '30077987' }
+db.RestaurantDetails.find({},{"restaurant_id" : 3,"name":3,"cuisine" :3});
+{ _id: ObjectId("634d8233e3030c957d53aced"),
+  cuisine: [ 'pastry', 'dessert' ],
+  name: 'Park Bake Shop',
+  restaurant_id: '30075445' }
+{ _id: ObjectId("634d8449e3030c957d53acee"),
+  cuisine: [ 'Japanese', 'Chinese' ],
+  name: 'Space Mike Shop',
+  restaurant_id: '34565445' }
+{ _id: ObjectId("634d8449e3030c957d53acef"),
+  cuisine: [ 'pastry', 'dessert' ],
+  name: 'Gowthaas',
+  restaurant_id: '56875445' }
+{ _id: ObjectId("634d8449e3030c957d53acf0"),
+  cuisine: [ 'pastry', 'dessert' ],
+  name: 'Bike Cake Shop',
+  restaurant_id: '31175445' }
+{ _id: ObjectId("634d8449e3030c957d53acf1"),
+  cuisine: [ 'Andhra', 'chinese' ],
+  name: 'Kalyan Khazana',
+  restaurant_id: '98445' }
+{ _id: ObjectId("634d8449e3030c957d53acf2"),
+  cuisine: [ 'asdasda', 'adsasasd' ],
+  name: 'Memories',
+  restaurant_id: '30077987' }
+db.RestaurantDetails.find({"name":/^Wil/},{"restaurant_id":1,"name":1,"state":1,"cuisine":1});
+db.RestaurantDetails.find({"name":/^Mem/},{"restaurant_id":1,"name":1,"state":1,"cuisine":1});
+{ _id: ObjectId("634d8449e3030c957d53acf2"),
+  cuisine: [ 'asdasda', 'adsasasd' ],
+  state: 'MP',
+  name: 'Memories',
+  restaurant_id: '30077987' }
+db.RestaurantDetails.find({"state":/^o/},{"restaurant_id":1,"name":1,"state":1,"cuisine":1});
+db.RestaurantDetails.find({"state":/^O/},{"restaurant_id":1,"name":1,"state":1,"cuisine":1});
+{ _id: ObjectId("634d8233e3030c957d53aced"),
+  cuisine: [ 'pastry', 'dessert' ],
+  state: 'Oklahoma',
+  name: 'Park Bake Shop',
+  restaurant_id: '30075445' }
+{ _id: ObjectId("634d8449e3030c957d53acf0"),
+  cuisine: [ 'pastry', 'dessert' ],
+  state: 'Oklahoma',
+  name: 'Bike Cake Shop',
+  restaurant_id: '31175445' }
+db.RestaurantDetails.find({"restaurant_id":1,"name":1,"state":1,"cuisine":1},{"state":/^O/});
+db.RestaurantDetails.find({"state":/^O/},{"restaurant_id":1,"name":1,"state":1,"cuisine":1});
+{ _id: ObjectId("634d8233e3030c957d53aced"),
+  cuisine: [ 'pastry', 'dessert' ],
+  state: 'Oklahoma',
+  name: 'Park Bake Shop',
+  restaurant_id: '30075445' }
+{ _id: ObjectId("634d8449e3030c957d53acf0"),
+  cuisine: [ 'pastry', 'dessert' ],
+  state: 'Oklahoma',
+  name: 'Bike Cake Shop',
+  restaurant_id: '31175445' }
+db.RestaurantDetails.find({"state":Oklahoma})
+ReferenceError: Oklahoma is not defined
+db.RestaurantDetails.find({"state":"Oklahoma"})
+{ _id: ObjectId("634d8233e3030c957d53aced"),
+  address: 
+   { building: '23,Archer Main',
+     street: 'marble drive',
+     zipcode: 403204 },
+  type_of_restaurant: 'Bakery',
+  cuisine: [ 'pastry', 'dessert' ],
+  state: 'Oklahoma',
+  grades: 
+   [ { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 } ],
+  name: 'Park Bake Shop',
+  restaurant_id: '30075445' }
+{ _id: ObjectId("634d8449e3030c957d53acf0"),
+  address: 
+   { building: '23,Archer Main',
+     street: 'marble drive',
+     zipcode: 403204 },
+  type_of_restaurant: 'Bakery',
+  cuisine: [ 'pastry', 'dessert' ],
+  state: 'Oklahoma',
+  grades: 
+   [ { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 } ],
+  name: 'Bike Cake Shop',
+  restaurant_id: '31175445' }
+db.RestaurantDetails.find({"state":"Oklahoma"},{$or:[{"type_of_restaurant":"Bakery"},{"type_of_restaurant":"Chinese"}]});
+MongoServerError: FieldPath field names may not start with '$'. Consider using $getField or $setField.
+db.RestaurantDetails.find({"state":"Oklahoma"},$or:[{"type_of_restaurant":"Bakery"},{"type_of_restaurant":"Chinese"}]);
+Error: clone(t={}){const r=t.loc||{};return e({loc:new Position("line"in r?r.line:this.loc.line,"column"in r?r.column:...<omitted>...)} could not be cloned.
+db.RestaurantDetails.find({"grades.score":4});
+{ _id: ObjectId("634d8449e3030c957d53acee"),
+  address: 
+   { building: '24,Tailor Main',
+     street: 'marble Mani',
+     zipcode: 403205 },
+  type_of_restaurant: 'Multi_Cuisine',
+  cuisine: [ 'Japanese', 'Chinese' ],
+  state: 'Manogod',
+  grades: 
+   [ { date: 2009-03-23T05:59:41.235Z, grade: 'B', score: 4 },
+     { date: 2009-03-23T05:59:41.235Z, grade: 'B', score: 4 },
+     { date: 2009-03-23T05:59:41.235Z, grade: 'B', score: 5 },
+     { date: 2009-03-23T05:59:41.235Z, grade: 'A', score: 5 },
+     { date: 2009-03-23T05:59:41.235Z, grade: 'A', score: 5 } ],
+  name: 'Space Mike Shop',
+  restaurant_id: '34565445' }
+db.RestaurantDetails.find({"grades.score":2});
+{ _id: ObjectId("634d8233e3030c957d53aced"),
+  address: 
+   { building: '23,Archer Main',
+     street: 'marble drive',
+     zipcode: 403204 },
+  type_of_restaurant: 'Bakery',
+  cuisine: [ 'pastry', 'dessert' ],
+  state: 'Oklahoma',
+  grades: 
+   [ { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 } ],
+  name: 'Park Bake Shop',
+  restaurant_id: '30075445' }
+{ _id: ObjectId("634d8449e3030c957d53acef"),
+  address: { building: '78,Tourist', street: 'drivein', zipcode: 403964 },
+  type_of_restaurant: 'Bakery',
+  cuisine: [ 'pastry', 'dessert' ],
+  state: 'Andhta',
+  grades: 
+   [ { date: 2008-06-04T08:26:21.235Z, grade: 'A+', score: 2 },
+     { date: 2008-06-04T08:26:21.235Z, grade: 'A+', score: 7 },
+     { date: 2008-06-04T08:26:21.235Z, grade: 'A+', score: 6 },
+     { date: 2008-06-04T08:26:21.235Z, grade: 'B', score: 2 },
+     { date: 2008-06-04T08:26:21.235Z, grade: 'A', score: 9 } ],
+  name: 'Gowthaas',
+  restaurant_id: '56875445' }
+{ _id: ObjectId("634d8449e3030c957d53acf0"),
+  address: 
+   { building: '23,Archer Main',
+     street: 'marble drive',
+     zipcode: 403204 },
+  type_of_restaurant: 'Bakery',
+  cuisine: [ 'pastry', 'dessert' ],
+  state: 'Oklahoma',
+  grades: 
+   [ { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 } ],
+  name: 'Bike Cake Shop',
+  restaurant_id: '31175445' }
+{ _id: ObjectId("634d8449e3030c957d53acf1"),
+  address: 
+   { building: '364,Javaline Throw',
+     street: 'Tiles Star',
+     zipcode: 403777 },
+  type_of_restaurant: 'FastFood',
+  cuisine: [ 'Andhra', 'chinese' ],
+  state: 'Telangana',
+  grades: 
+   [ { date: 2276-11-21T21:46:21.235Z, grade: 'C', score: 10 },
+     { date: 2276-11-21T21:46:21.235Z, grade: 'C', score: 10 },
+     { date: 2276-11-21T21:46:21.235Z, grade: 'C', score: 10 },
+     { date: 2276-11-21T21:46:21.235Z, grade: 'A', score: 10 },
+     { date: 2276-11-21T21:46:21.235Z, grade: 'A', score: 2 } ],
+  name: 'Kalyan Khazana',
+  restaurant_id: '98445' }
+{ _id: ObjectId("634d8449e3030c957d53acf2"),
+  address: 
+   { building: '203,Archer dfgdfg',
+     street: 'Kalyane',
+     zipcode: 9879875 },
+  type_of_restaurant: 'Mine',
+  cuisine: [ 'asdasda', 'adsasasd' ],
+  state: 'MP',
+  grades: 
+   [ { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 },
+     { date: 2009-02-13T23:33:01.235Z, grade: 'A', score: 2 } ],
+  name: 'Memories',
+  restaurant_id: '30077987' }

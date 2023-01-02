@@ -1,0 +1,7 @@
+<h2>User Login</h2>
+
+<form [formGroup]="userLoginForm" (ngSubmit)="login()" >
+    Enter UserId : <br> <input type="text" formControlName="userId"><br>
+    Enter Password: <br> <input type="text" formControlName="userPassword"><br>
+    <input type="button" class="btn btn-success" type="submit" value="Login">
+</form>

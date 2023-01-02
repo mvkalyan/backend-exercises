@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+       xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="Customer1" class="org.example.domain.Customer">
+        <property name="custId" value="101"/>
+        <property name="custName" value="Manoj"/>
+        <property name="custBill" value="5000"/>
+        <property name="itemList">
+            <list>
+                <ref bean="item1"></ref>
+                <ref bean="item3"></ref>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="Customer2" class="org.example.domain.Customer">
+        <property name="custId" value="102"/>
+        <property name="custName" value="Kalyan"/>
+        <property name="custBill" value="50000"/>
+        <property name="itemList">
+            <list>
+                <ref bean="item2"></ref>
+                <ref bean="item3"></ref>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="item1" class="org.example.domain.Item">
+        <constructor-arg index="0" value="501"/>
+        <constructor-arg index="1" value="400"/>
+        <constructor-arg index="2" value="Gigster"/>
+    </bean>
+
+    <bean id="item2" class="org.example.domain.Item">
+        <constructor-arg index="0" value="502"/>
+        <constructor-arg index="1" value="40000"/>
+        <constructor-arg index="2" value="Gigster"/>
+    </bean>
+
+    <bean id="item3" class="org.example.domain.Item">
+        <constructor-arg index="0" value="503"/>
+        <constructor-arg index="1" value="4600"/>
+        <constructor-arg index="2" value="Mags"/>
+    </bean>
+</beans>

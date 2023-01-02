@@ -1,0 +1,23 @@
+CustomerServiceDemo---> Parent project
+customerService, authService ---> child project /module
+1.create maven quick start project
+2. delete src folder
+3.add modules---> auth service(User), Movieservice(Movie,user)
+4.update parent pom.xml
+	a.<packaging>pom</packaging>
+	b.add spring boot starter parent depenency
+		<parent>
+  			  <groupId>org.springframework.boot</groupId>
+  			  <artifactId>spring-boot-starter-parent</artifactId>
+  			  <version>2.7.5</version>
+   			 <relativePath/> <!-- lookup parent from repository -->
+  		</parent>
+	c.modules
+		<modules>
+  			<module>authService</module>
+    			<module>MovieService</module>
+  		</modules>
+5.update both child pom
+    by adding parent artifactid and group id
+6.Product service -- need add domain class user
+7. service need add method which saveUser()

@@ -1,0 +1,36 @@
+<h1>MovieApp</h1>
+
+<h2>Movie Form</h2>
+<form [formGroup]="movieForm" (ngSubmit)="saveMovieData()">
+    <label for="movieId">MovieID</label>
+    <input type="number" name="movieId" formControlName="movieId"><br>
+    <label for="movieName">MovieName</label>
+    <input type="text" name="movieName" formControlName="movieName"><br>
+    <label for="movieHero">MovieHero</label>
+    <input type="text" name="movieHero" formControlName="movieHero"><br>
+    <label for="movieBudget">MovieBudget</label>
+    <input type="number" name="movieBudget" formControlName="movieBudget"><br>
+    <input type="submit" value="Send Movie">
+</form>
+
+<hr>
+<div *ngFor="let m of movieData">
+    {{m|json}} <button (click)="deleteMovie(m.movieId)">Delete</button>
+    <button (click)="formEnable(m)">Edit</button>
+</div>
+<hr>
+
+<form [formGroup]="movieUpdateForm" (ngSubmit)="movieUpdate()" *ngIf="formFlag">
+    <h2>Movie Update Form</h2>
+    <label for="movieId">MovieID</label>
+    <input type="number" name="movieId" formControlName="movieId" readonly><br>
+    <label for="movieName">MovieName</label>
+    <input type="text" name="movieName" formControlName="movieName"><br>
+    <label for="movieHero">MovieHero</label>
+    <input type="text" name="movieHero" formControlName="movieHero"><br>
+    <label for="movieBudget">MovieBudget</label>
+    <input type="number" name="movieBudget" formControlName="movieBudget"><br>
+    <input type="submit" value="Update Movie">
+</form>
+
+<button (click)="logout()">Logout</button>

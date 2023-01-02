@@ -1,0 +1,15 @@
+Server side:
+1.create spring boot app by adding Eureka Server as cloude dependancy
+->add project as child project to existing microservice application
+->update pom.xml
+2.set required properties
+application.properties
+3.enable new boot application as Eureka server
+@EnableEurekaServer
+client side:
+1.add eureka client dependency
+2. edit appication.property file
+	eureka.client.service.url.defaultZone=http://localhost:8761/eureka	
+	eureka.client.fetch.registry=true
+	eureka.client.register-with-eureka=true
+3.add @EnableEurekaClient on main class

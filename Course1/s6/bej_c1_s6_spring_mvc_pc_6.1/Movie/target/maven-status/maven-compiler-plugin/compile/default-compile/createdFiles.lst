@@ -1,0 +1,3 @@
+com\movie\model\Movie.class
+com\movie\controller\MovieController.class
+com\movie\repository\MovieRepository.class

@@ -1,0 +1,7 @@
+<h2>User Login</h2>
+
+<form [formGroup]="userLoginFormData" (ngSubmit)="loginCheck()">
+    Enter User-Id : <input type="text" formControlName="userId"><br>
+    Enter Password: <input type="text" formControlName="userPassword"><br>
+    <input type="submit" value="Login">
+</form>

@@ -1,0 +1,5 @@
+1.add depency hystrix in pom.xml
+2.enable hystrix @EnableHystrix
+3.apply circuit breaker on login method by adding annotation
+    @HystrixCommand(fallbackMethod = "fallbackLogin",commandKey = "loginKey",groupKey = "login")
+    @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "1000")

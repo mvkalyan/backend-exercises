@@ -1,0 +1,6 @@
+1.create spring boot app by adding gateway
+	Gateway spring cloud Routing
+2.add gateapp in parent application, which we have created earlier
+3.make parent--> child relationship between existing parent application and added apigw app
+4.create configuration file in gateway application
+5.update application property file for api gate way application

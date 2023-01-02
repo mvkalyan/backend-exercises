@@ -1,0 +1,15 @@
+14:12:44.0636 [SpringApplicationShutdownHook] DEBUG o.s.boot.availability.ApplicationAvailabilityBean-Application availability state ReadinessState changed from ACCEPTING_TRAFFIC to REFUSING_TRAFFIC
+14:12:44.0636 [SpringApplicationShutdownHook] DEBUG o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext-Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3224a577, started on Sun Oct 23 14:03:36 IST 2022
+14:12:44.0638 [SpringApplicationShutdownHook] DEBUG o.s.context.support.DefaultLifecycleProcessor-Stopping beans in phase 2147483647
+14:12:44.0639 [SpringApplicationShutdownHook] DEBUG o.s.context.support.DefaultLifecycleProcessor-Bean 'webServerGracefulShutdown' completed its stop procedure
+14:12:44.0639 [SpringApplicationShutdownHook] DEBUG o.s.context.support.DefaultLifecycleProcessor-Stopping beans in phase 2147483646
+14:12:44.0657 [SpringApplicationShutdownHook] DEBUG o.s.context.support.DefaultLifecycleProcessor-Bean 'webServerStartStop' completed its stop procedure
+14:12:44.0657 [SpringApplicationShutdownHook] DEBUG o.s.context.support.DefaultLifecycleProcessor-Stopping beans in phase -2147483647
+14:12:44.0657 [SpringApplicationShutdownHook] DEBUG o.s.context.support.DefaultLifecycleProcessor-Bean 'springBootLoggingLifecycle' completed its stop procedure
+14:12:44.0658 [SpringApplicationShutdownHook] DEBUG o.s.scheduling.concurrent.ThreadPoolTaskExecutor-Shutting down ExecutorService 'applicationTaskExecutor'
+14:12:44.0659 [SpringApplicationShutdownHook] DEBUG org.mongodb.driver.protocol.command-Sending command '{"endSessions": [{"id": {"$binary": {"base64": "Vwn14drgSsiaxZXqaSAi+g==", "subType": "04"}}}], "$db": "admin", "$readPreference": {"mode": "primaryPreferred"}}' with request id 63 to database admin on connection [connectionId{localValue:3, serverValue:6}] to server localhost:27017
+14:12:44.0660 [SpringApplicationShutdownHook] DEBUG org.mongodb.driver.protocol.command-Execution of command with request id 63 completed successfully in 0.93 ms on connection [connectionId{localValue:3, serverValue:6}] to server localhost:27017
+14:12:44.0662 [SpringApplicationShutdownHook] DEBUG org.mongodb.driver.connection-Closed connection [connectionId{localValue:3, serverValue:6}] to localhost:27017 because the pool has been closed.
+14:12:44.0662 [SpringApplicationShutdownHook] DEBUG org.mongodb.driver.connection-Closing connection connectionId{localValue:3, serverValue:6}
+14:12:44.0662 [SpringApplicationShutdownHook] DEBUG org.mongodb.driver.connection-Closing connection connectionId{localValue:1, serverValue:4}
+14:12:44.0663 [SpringApplicationShutdownHook] DEBUG org.mongodb.driver.connection-Closing connection connectionId{localValue:2, serverValue:5}

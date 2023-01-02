@@ -1,0 +1,10 @@
+<div>
+    <h2>User SignUp</h2>
+
+    <form [formGroup]="userSignupFormData" (ngSubmit)="registerUser()">
+    Enter Email-Id: <input type="text" formControlName="userEmail"><br>
+    Enter Password: <input type="text" formControlName="userPassword"><br>
+    <input type="submit" value="SignUp">
+    </form>
+
+</div>

@@ -1,0 +1,10 @@
+<div>
+    <h2>User SignUp</h2>
+    <form [formGroup]="userRegisterForm" (ngSubmit)="registerUser()">
+    Enter email: <br><input type="text" formControlName="email"><br>
+    Enter password: <br><input type="text" formControlName="password"><br>
+    Enter name: <br><input type="text" formControlName="name"><br>
+    Enter address: <br><input type="text" formControlName="address"><br>
+    <input type="button" class="btn btn-success" type="submit" value="SignUp">
+    </form>
+</div>

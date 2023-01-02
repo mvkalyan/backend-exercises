@@ -1,0 +1,53 @@
+version: '3.3'
+services:
+  mysqlservice:
+    image: mysql:5.5
+    ports:
+      - 3306:3306
+    container_name: mysql-container
+    network_mode: host
+    hostname: localhost
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: root
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+
+  MongoService:
+    image: mongo:latest
+    ports:
+      - 27017:27017
+    container_name: mongo-container
+    network_mode: host
+    hostname: localhost
+
+  userauthservice:
+    container_name: user-auth-service-container
+    build: jwt/
+    hostname: localhost
+    network_mode: host
+    depends_on:
+      - mysqlservice
+    ports:
+      - 8085:8085
+    restart: always
+
+  productservice:
+    container_name: product_service_container
+    build: productdetails/
+    hostname: localhost
+    network_mode: host
+    ports:
+      - 8081:8081
+    depends_on:
+      - MongoService
+    restart: always
+
+  gatewayservice:
+    image: gateway_image
+    container_name: gateway_container
+    build: apigateway/
+    network_mode: host
+    hostname: localhost
+    ports:
+      - 64000:64000

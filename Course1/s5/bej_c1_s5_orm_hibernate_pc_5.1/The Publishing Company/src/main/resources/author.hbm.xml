@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.example.author.model.Author" table="Author">
+        <id name="authId" type="int">
+            <column name="AUTHOR_ID"/>
+        </id>
+        <property name="authName" type="string" column="AUTHOR_NAME" length="40"/>
+        <property name="authFam" type="string" column="AUTHOR_FAMOUS" length="50"/>
+    </class>
+
+
+<!--    <class name="com.niit.author.model.User" table="USER">-->
+<!--        <id name="userId" type="int">-->
+<!--            <column name="USERID" />-->
+<!--            &lt;!&ndash;            <generator class="assigned" />&ndash;&gt;-->
+<!--        </id>-->
+
+<!--        <property name="username" type="string" column ="USERNAME" length="30"/>-->
+<!--        <property name="email" type="string" column ="EMAIL" length="45">-->
+<!--        </property>-->
+<!--    </class>-->
+</hibernate-mapping>

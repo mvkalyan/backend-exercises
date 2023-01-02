@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ShoppingApplication/BEJ_c3_s4_microservices_pc5.iml" filepath="$PROJECT_DIR$/ShoppingApplication/BEJ_c3_s4_microservices_pc5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ShoppingApplication.iml" filepath="$PROJECT_DIR$/.idea/ShoppingApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShoppingApplication/UserAuthenticationService/UserAuthenticationService.iml" filepath="$PROJECT_DIR$/ShoppingApplication/UserAuthenticationService/UserAuthenticationService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ShoppingApplication/UserProductService/UserMovieService.iml" filepath="$PROJECT_DIR$/ShoppingApplication/UserProductService/UserMovieService.iml" />
+    </modules>
+  </component>
+</project>

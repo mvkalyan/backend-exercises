@@ -1,0 +1,5 @@
+<h3>Available Pizzas</h3>
+<div *ngFor="let p of pizzas">
+    {{p|json}}  <button type="button" class="btn btn-primary btn-sm" (click)="addToCart(p)">Add to Cart</button> &nbsp;
+    <button type="button" class="btn btn-warning btn-sm"(click)="deleteFromCart(p)">Remove from Cart</button> 
+</div>

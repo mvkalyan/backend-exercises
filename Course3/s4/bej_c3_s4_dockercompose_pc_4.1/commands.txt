@@ -1,0 +1,58 @@
+Pull The Image
+Containerize the Image
+Run The Container
+Adding Docker Form Docker HUB
+------
+1. Pull the Image
+    sudo docker pull mongo:latest ---->docker hub
+2. Check the Local machine -Vlab
+       status of image
+    sudo service mongod status
+3.If Status of service is runing stop the service to containerize
+      sudo service mongod stop
+4.Contenarize
+    sudo  docker run -d mongo:latest // not expose to port 27017
+5. sudo docker run -d -p 27017:27017 --name mycontainer mongo:latest
+
+
+
+
+
+
+********************DOCKERFILE********************
+#docker image for java 11
+FROM openjdk
+#Reffering to working Directory of your image
+
+WORKDIR usr/lib
+
+#copy paste database name and mongodb url from application.resources
+
+ENV MONGO_DATABASE=customerdb
+ENV MONGO_URL=mongodb://localhost:27017/customerdb
+
+#copy executable file and put it your working directory
+#add source destination
+ADD ./target/course13Sprint4-0.0.1-SNAPSHOT.jar usr/lib/course13Sprint4-0.0.1-SNAPSHOT.jar
+
+
+
+ENTRYPOINT["java","-jar","course13Sprint4.0.0.1-SNAPSHOT.jar"]
+****************************************************************
+
+
+
+DOCKER Commands
+********************
+Sudo docker build
+ 1.Open the App in InTelliJ  on VM
+ 2. Create the docker file
+ 3.Build the image
+      sudo docker build -t my-image1 .
+4.create the container
+       sudo docker run --name  mycontainer1  --network=host my-image1
+5run the mongo container
+      sudo docker run --name nycontainer2  -p 27017:29017  mongo:latest
+6Check if Both Containers are up
+     sudo docker ps
+

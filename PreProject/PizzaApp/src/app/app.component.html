@@ -1,0 +1,11 @@
+<div style="background-color:rgb(0, 0, 0);text-align: center;">
+    <h2 style="color: rgb(255, 38, 0);">WahtAPizza</h2>
+    <button type="button" class="btn btn-primary btn-sm" routerLink="/register">SignUp</button> &nbsp;
+    <button type="button" class="btn btn-primary btn-sm" routerLink="/login">Login</button> &nbsp;
+    <button type="button" class="btn btn-primary btn-sm" routerLink="/pizza">Pizza</button> &nbsp;
+    <button type="button" class="btn btn-primary btn-sm" routerLink="/cart">Cart</button> &nbsp;
+    <button type="button" class="btn btn-danger btn-sm" (click)="logout()">Logout</button> &nbsp;
+</div>
+<div style="text-align:center;">
+    <router-outlet></router-outlet>
+</div>

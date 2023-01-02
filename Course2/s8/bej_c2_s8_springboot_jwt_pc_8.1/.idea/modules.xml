@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/bej_c2_s8_springboot_jwt_pc_8.1.iml" filepath="$PROJECT_DIR$/.idea/bej_c2_s8_springboot_jwt_pc_8.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jwt/jwt.iml" filepath="$PROJECT_DIR$/jwt/jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/productdetails/productdetails.iml" filepath="$PROJECT_DIR$/productdetails/productdetails.iml" />
+    </modules>
+  </component>
+</project>
